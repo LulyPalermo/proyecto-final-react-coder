@@ -1,0 +1,38 @@
+/* Colores y tipografías */
+:root {
+  /* Colores */
+  --primary: #285D98;
+  --secondary: #167A92;
+  --white: #FDFDF9;
+  --taupe: #F7F6F2;
+  --lightGrey: #d8d8d8;
+  --mediumGrey: #939395;
+  --darkGrey: #4C5666;
+  --black: #2E3644;
+  --success: #3C9B94;
+  --error: #D03F3F;
+
+  /* Fuentes */
+  /* --fontPrimary: 'Raleway', sans-serif; */
+  --fontPrimary: "Josefin Sans", serif;
+  --fontSeconday: "Playfair Display", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Globales */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1REM = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
