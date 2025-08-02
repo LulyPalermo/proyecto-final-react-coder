@@ -36,3 +36,93 @@ html {
   box-sizing: inherit;
 }
 
+/* Body */
+
+body {
+  font-family: var(--fontPrimary);
+  font-size: 2rem;
+}
+
+/* Header */
+header {
+  background-color: var(--taupe);
+  padding: 3rem 6rem 2rem 6rem;
+  /* position: fixed; */
+  /* width: 100%; */
+  /* top: 0; */
+  /* left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  flex: 1;
+}
+
+.header-logo img {
+  height: 5rem;
+}
+
+/* NavBar */
+
+.nav-list {
+  display: flex;
+  gap: 3rem;
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.nav-link:hover {
+  color: var(--secondary);
+}
+
+
+/* Cart Widget */
+
+#cart-widget {
+  /* width: 2.5rem; */
+  font-size: 2.6rem;
+  cursor: pointer;
+}
+
+.cart-badge {
+  background: var(--secondary);
+  border-radius: 100%;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 4.4rem;
+  right: 5rem;
+  display: block;
+  line-height: 2rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+}
+
+
+.main-container {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.main-container p:first-child {
+  font-size: 2.2rem;
+}
+
+.main-container p:last-child {
+  padding-top: 1rem;
+  font-weight: 300;
+}
