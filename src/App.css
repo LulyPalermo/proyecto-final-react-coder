@@ -3,7 +3,7 @@
   /* Colores */
   --primary: #285D98;
   --secondary: #167A92;
-  --white: #FDFDF9;
+  --white: #ffffff;
   --taupe: #F7F6F2;
   --lightGrey: #d8d8d8;
   --mediumGrey: #939395;
@@ -41,19 +41,21 @@ html {
 body {
   font-family: var(--fontPrimary);
   font-size: 2rem;
+  font-weight: 300
 }
 
 /* Header */
 header {
   background-color: var(--taupe);
   padding: 3rem 6rem 2rem 6rem;
-  /* position: fixed; */
-  /* width: 100%; */
-  /* top: 0; */
+  position: fixed;
+  width: 100%;
+  top: 0;
   /* left: 0; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  z-index: 1;
 }
 
 .header-top {
@@ -81,12 +83,14 @@ header {
 .nav-link {
   text-decoration: none;
   color: var(--black);
+  font-weight: 400;
 }
 
 .nav-link:hover {
   color: var(--secondary);
 }
 
+/* -------------------------------------------------------------------- */
 
 /* Cart Widget */
 
@@ -114,15 +118,104 @@ header {
 
 
 .main-container {
-  padding-top: 3rem;
-  text-align: center;
+  /* max-width: 120rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 18rem 4rem 4rem 4rem;
+  margin: 0 auto;
 }
 
-.main-container p:first-child {
-  font-size: 2.2rem;
+/* .main-container p:first-child {
+  font-weight: 350;
+  text-align: center;
 }
 
 .main-container p:last-child {
   padding-top: 1rem;
-  font-weight: 300;
+   text-align: center;
+} */
+
+
+/* -------------------------------------------------------------------- */
+
+/* Item | ItemList | ItemListContainer */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  list-style-type: none;
+  /* padding: 0; */
+  /* margin-top: 0; */
+}
+
+.product-image {
+  overflow: hidden;
+}
+
+.product-image img {
+  display: block;
+  max-width: 100%;
+  transition: all .5s ease-in-out;
+}
+
+.product-image img:hover {
+  opacity: 0.7;
+  transform: scale(1.25);
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.product-name {
+  cursor: pointer;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.product-name:hover {
+  color: var(--secondary);
+}
+
+.product-price {
+  /* cursor: pointer; */
+  color: var(--black);
+  font-weight: 350;
+  font-size: 1.8rem;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------- */
+
+/* BUTTONS */
+
+.primary-button {
+  font: var(--fontPrimary);
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 350;
+  /* padding: 0 2rem; */
+  min-height: 45px;
+  background-color: var(--darkGrey);
+  border: 1px solid var(--darkGrey);
+  color: var(--white);
+  cursor: pointer;
+  transition: all .6s ease;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+
+.primary-button:hover {
+  color: var(--darkGrey);
+  background-color: var(--white);
 }
