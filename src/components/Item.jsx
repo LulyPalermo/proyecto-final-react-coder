@@ -9,7 +9,7 @@ function Item({ prod }) {
                 </div>
                 <div className="product-info">
                     <p className="product-name">{prod.name}</p>
-                    <p className="product-price">${prod.price}</p>
+                    <p className="product-price">$ {prod.price}</p>
                 </div>
                 <button className="primary-button">Ver detalle</button>
             </li>
