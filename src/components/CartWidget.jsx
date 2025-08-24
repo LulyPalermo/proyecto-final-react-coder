@@ -6,7 +6,7 @@ export const CartWidget = () => {
         <div id="cart-widget">
             {/* <img src="../shopBag.png" alt="Shop bag" /> */}
             <HiOutlineShoppingBag />
-            <span className="cart-badge">10</span>
+            <span className="cart-badge">0</span>
         </div>
     )
 }

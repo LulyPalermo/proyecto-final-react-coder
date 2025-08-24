@@ -6,7 +6,9 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/tazaOso1.jpg'
+        img: [
+            '/public/tazaOso1.jpg'
+        ]
     },
     {
         id: '02',
@@ -15,7 +17,10 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/bowlAncla1.jpg'
+        img: [
+            '/public/bowlAncla1.jpg',
+            '/public/bowlAncla2.jpg'
+        ]
     },
     {
         id: '03',
@@ -24,7 +29,10 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/tazaAventura1.jpg'
+        img: [
+            '/public/tazaAventura1.jpg',
+            '/public/tazaAventura2.jpg'
+        ]
     },
     {
         id: '04',
@@ -33,7 +41,10 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/cuchilloLove1.jpg'
+        img: [
+            '/public/cuchilloLove1.jpg',
+            '/public/cuchilloLove2.jpg'
+        ]
     },
     {
         id: '05',
@@ -42,7 +53,11 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/cucharaLove1.jpg'
+        img: [
+            '/public/cucharaLove1.jpg',
+            '/public/cucharaLove2.jpg'
+        ]
+
     },
     {
         id: '06',
@@ -51,7 +66,10 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/bowlDots1.jpg'
+        img: [
+            '/public/bowlDots1.jpg',
+            '/public/bowlDots2.jpg'
+        ]
     },
     {
         id: '07',
@@ -60,7 +78,10 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/bowlFelix1.jpg'
+        img: [
+            '/public/bowlFelix1.jpg',
+            '/public/bowlFelix2.jpg'
+        ]
     },
     {
         id: '08',
@@ -69,7 +90,10 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/tazaFelix1.jpg'
+        img: [
+            '/public/tazaFelix1.jpg',
+            '/public/tazaFelix2.jpg'
+        ]
     },
     {
         id: '09',
@@ -78,7 +102,10 @@ const products = [
         category: 'textiles',
         stock: 20,
         price: 1200,
-        img: '/public/almohadonBrana1.jpg'
+        img: [
+            '/public/almohadonBrana1.jpg',
+            '/public/almohadonBrana2.jpg'
+        ]
     },
     {
         id: '10',
@@ -87,7 +114,11 @@ const products = [
         category: 'textiles',
         stock: 20,
         price: 1200,
-        img: '/public/almohadonMalva1.jpg'
+        img: [
+            '/public/almohadonMalva1.jpg',
+            '/public/almohadonMalva2.jpg',
+            '/public/almohadonMalva3.jpg'
+        ]
     },
     {
         id: '11',
@@ -96,7 +127,9 @@ const products = [
         category: 'deco',
         stock: 20,
         price: 1200,
-        img: '/public/jarraMenta1.jpg'
+        img: [
+            '/public/jarraMenta1.jpg'
+        ]
     },
     {
         id: '12',
@@ -105,7 +138,10 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/platoAnne1.jpg'
+        img: [
+            '/public/platoAnne1.jpg',
+            '/public/platoAnne2.jpg'
+        ]
     },
     {
         id: '13',
@@ -114,7 +150,10 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/platoDots1.jpg'
+        img: [
+            '/public/platoDots1.jpg',
+            '/public/platoDots2.jpg'
+        ]
     },
     {
         id: '14',
@@ -123,7 +162,10 @@ const products = [
         category: 'deco',
         stock: 20,
         price: 1200,
-        img: '/public/macetaOso1.jpg'
+        img: [
+            '/public/macetaOso1.jpg',
+            '/public/macetaOso2.jpg'
+        ]
     },
     {
         id: '15',
@@ -132,7 +174,10 @@ const products = [
         category: 'deco',
         stock: 20,
         price: 1200,
-        img: '/public/macetaConejo1.jpg'
+        img: [
+            '/public/macetaConejo1.jpg',
+            '/public/macetaConejo2.jpg'
+        ]
     },
     {
         id: '16',
@@ -141,7 +186,9 @@ const products = [
         category: 'deco',
         stock: 20,
         price: 1200,
-        img: '/public/adornoSantorini1.jpg'
+        img: [
+            '/public/adornoSantorini1.jpg'
+        ]
     },
     {
         id: '17',
@@ -150,7 +197,9 @@ const products = [
         category: 'cocina',
         stock: 20,
         price: 1200,
-        img: '/public/bowlSantorini1.jpg'
+        img: [
+            '/public/bowlSantorini1.jpg'
+        ]
     },
     {
         id: '18',
@@ -159,7 +208,10 @@ const products = [
         category: 'textiles',
         stock: 20,
         price: 1200,
-        img: '/public/repasadorMar1.jpg'
+        img: [
+            '/public/repasadorMar1.jpg',
+            '/public/repasadorMar2.jpg'
+        ]
     },
     {
         id: '19',
@@ -168,7 +220,10 @@ const products = [
         category: 'textiles',
         stock: 20,
         price: 1200,
-        img: '/public/repasadorRayas1.jpg'
+        img: [
+            '/public/repasadorRayas1.jpg',
+            '/public/repasadorRayas2.jpg'
+        ]
     },
     {
         id: '20',
@@ -177,7 +232,11 @@ const products = [
         category: 'textiles',
         stock: 20,
         price: 1200,
-        img: '/public/mantapunto1.jpg'
+        img: [
+            '/public/mantapunto1.jpg',
+            '/public/mantapunto2.jpg',
+            '/public/mantapunto3.jpg'
+        ]
     },
     {
         id: '21',
@@ -186,7 +245,11 @@ const products = [
         category: 'textiles',
         stock: 20,
         price: 1200,
-        img: '/public/mantaMecha1.jpg'
+        img: [
+            '/public/mantaMecha1.jpg',
+            '/public/mantaMecha2.jpg',
+            '/public/mantaMecha3.jpg'
+        ]
     },
     {
         id: '22',
@@ -195,7 +258,9 @@ const products = [
         category: 'deco',
         stock: 20,
         price: 1200,
-        img: '/public/relojKent1.jpg'
+        img: [
+            '/public/relojKent1.jpg'
+        ]
     },
     {
         id: '23',
@@ -204,7 +269,11 @@ const products = [
         category: 'deco',
         stock: 20,
         price: 1200,
-        img: '/public/marcoOndas1.jpg'
+        img: [
+            '/public/marcoOndas1.jpg',
+            '/public/marcoOndas2.jpg',
+            '/public/marcoOndas3.jpg'
+        ]
     },
     {
         id: '24',
@@ -213,7 +282,11 @@ const products = [
         category: 'deco',
         stock: 20,
         price: 1200,
-        img: '/public/marcoOval1.jpg'
+        img: [
+            '/public/marcoOval1.jpg',
+            '/public/marcoOval2.jpg',
+            '/public/marcoOval3.jpg'
+        ]
     },
     {
         id: '25',
@@ -222,7 +295,11 @@ const products = [
         category: 'deco',
         stock: 20,
         price: 1200,
-        img: '/public/cestaOndas1.jpg'
+        img: [
+            '/public/cestaOndas1.jpg',
+            '/public/cestaOndas2.jpg',
+            '/public/cestaOndas3.jpg',
+        ]
     },
     /*  {
         id: '',
@@ -231,7 +308,9 @@ const products = [
         category: 'deco',
         stock: 20,
         price: 1200,
-        img: '/public/marcoOval1.jpg'
+         img: [ 
+            '/public/marcoOval1.jpg'
+        ] 
     }, */
 ]
 
