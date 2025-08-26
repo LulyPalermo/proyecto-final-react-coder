@@ -26,7 +26,9 @@ export const ItemDetail = ({ product }) => {
                     </div>
 
                     <div className="product-count">
-                        <ItemCount></ItemCount>
+                        <ItemCount stock={product.stock} />
+                        <p className="product-detail-stock">Stock disponible: {product.stock}</p>
+
                     </div>
 
                 </div>

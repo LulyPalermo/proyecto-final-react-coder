@@ -275,6 +275,14 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  /* border-bottom: 1px solid var(--lightGrey); */
+  /* padding-bottom: 2rem; */
+}
+
+.product-detail-stock {
+  font-size: 1.7rem;
+  padding-top: 1.5rem;
+  color: var(--mediumGrey);
 }
 
 .product-detail-description p:first-child {
@@ -333,7 +341,8 @@ header {
 
 @media (max-width: 768px) {
   .product-detail-info {
-    position: static; /* vuelve a fluir con el contenido */
+    position: static;
+    /* vuelve a fluir con el contenido */
     top: auto;
   }
 }

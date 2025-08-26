@@ -3,14 +3,14 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { IoMdAdd } from "react-icons/io";
 import { IoMdRemove } from "react-icons/io";
 
-export const ItemCount = () => {
+export const ItemCount = ({stock}) => {
 
     // Estado para el contador (inicia en 1)
     const [quantity, setQuantity] = useState(1);
 
-    // Sumar 1
+    // Sumar 1, pero no pasarse del stock
     const handleAdd = () => {
-        setQuantity(prev => prev + 1);
+        setQuantity(prev => (prev < stock ? prev + 1 : prev));
     };
 
     // Restar 1, sin bajar de 1

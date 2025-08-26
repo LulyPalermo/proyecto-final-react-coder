@@ -15,7 +15,7 @@ const products = [
         name: 'bowl ancla',
         description: 'Bowl de cerámica con diseño de ancla',
         category: 'cocina',
-        stock: 20,
+        stock: 10,
         price: 1200,
         img: [
             '/public/bowlAncla1.jpg',
@@ -39,7 +39,7 @@ const products = [
         name: 'cuchillo untar love',
         description: 'Cuchillo de untar (2 unidades). No lavar en lavavajilla, ni limpiar con limpia metales o cif. Solo virulana seca',
         category: 'cocina',
-        stock: 20,
+        stock: 50,
         price: 1200,
         img: [
             '/public/cuchilloLove1.jpg',
@@ -51,7 +51,7 @@ const products = [
         name: 'cuchara love',
         description: 'Cuchara (2 unidades).No lavar en lavavajilla, ni limpiar con limpia metales o cif. Solo virulana seca',
         category: 'cocina',
-        stock: 20,
+        stock: 50,
         price: 1200,
         img: [
             '/public/cucharaLove1.jpg',
@@ -88,7 +88,7 @@ const products = [
         name: 'taza felix',
         description: 'Taza de café con plato. Detalle de bordes en azul.',
         category: 'cocina',
-        stock: 20,
+        stock: 30,
         price: 1200,
         img: [
             '/public/tazaFelix1.jpg',
@@ -125,7 +125,7 @@ const products = [
         name: 'jarra menta',
         description: 'Jarra de cerámica color verde menta y blanco. \r\nIdeal para agua, jugo o incluso de florero',
         category: 'deco',
-        stock: 20,
+        stock: 10,
         price: 1200,
         img: [
             '/public/jarraMenta1.jpg'
@@ -136,7 +136,7 @@ const products = [
         name: 'plato anne',
         description: 'Plato de porcelana pintado a mano en color azul, con detalle en oro en el borde. No apto para microondas',
         category: 'cocina',
-        stock: 20,
+        stock: 50,
         price: 1200,
         img: [
             '/public/platoAnne1.jpg',
@@ -148,7 +148,7 @@ const products = [
         name: 'plato dots',
         description: 'Plato de porcelana con diseño en calco y detalle en oro en el borde. No apto para microondas',
         category: 'cocina',
-        stock: 20,
+        stock: 60,
         price: 1200,
         img: [
             '/public/platoDots1.jpg',
@@ -160,7 +160,7 @@ const products = [
         name: 'maceta oso',
         description: 'Maceta de cerámica esmaltada, con forma de oso, realizada y pintada de forma artesanal. Puede usarse como maceta o florero.',
         category: 'deco',
-        stock: 20,
+        stock: 10,
         price: 1200,
         img: [
             '/public/macetaOso1.jpg',
@@ -172,7 +172,7 @@ const products = [
         name: 'maceta conejo',
         description: 'Maceta de cerámica esmaltada, con forma de conejo, realizada y pintada de forma artesanal. Puede usarse como maceta o florero',
         category: 'deco',
-        stock: 20,
+        stock: 10,
         price: 1200,
         img: [
             '/public/macetaConejo1.jpg',
@@ -184,7 +184,7 @@ const products = [
         name: 'adorno santorini',
         description: 'Florero de cerámica, realizado en forma artesanal, con tallado de figuras geométricas',
         category: 'deco',
-        stock: 20,
+        stock: 8,
         price: 1200,
         img: [
             '/public/adornoSantorini1.jpg'
@@ -195,7 +195,7 @@ const products = [
         name: 'bowl santorini',
         description: 'Bowl de cerámica, realizado en forma artesanal, con tallado de figuras geométricas',
         category: 'cocina',
-        stock: 20,
+        stock: 10,
         price: 1200,
         img: [
             '/public/bowlSantorini1.jpg'
@@ -206,7 +206,7 @@ const products = [
         name: 'repasador mar',
         description: 'Repasador de algodón con estampa. Lavar con agua fría, jabón neutro, no usar cloro',
         category: 'textiles',
-        stock: 20,
+        stock: 30,
         price: 1200,
         img: [
             '/public/repasadorMar1.jpg',
@@ -218,7 +218,7 @@ const products = [
         name: 'repasador rayas',
         description: 'Repasador de algodón a rayas anchas color azul y celeste. Lavar con agua fría, jabón neutro, no usar cloro',
         category: 'textiles',
-        stock: 20,
+        stock: 30,
         price: 1200,
         img: [
             '/public/repasadorRayas1.jpg',
@@ -230,7 +230,7 @@ const products = [
         name: 'manta punto',
         description: 'Manta de hilo 100% algodón, en punto, con dibujo zigzag en relieve',
         category: 'textiles',
-        stock: 20,
+        stock: 15,
         price: 1200,
         img: [
             '/public/mantapunto1.jpg',
@@ -256,7 +256,7 @@ const products = [
         name: 'reloj kent',
         description: 'Reloj de pared de metal de inspiración nórdica',
         category: 'deco',
-        stock: 20,
+        stock: 10,
         price: 1200,
         img: [
             '/public/relojKent1.jpg'
@@ -267,7 +267,7 @@ const products = [
         name: 'marco fotos ondas',
         description: 'Marco de fotos con filo metálico y silueta ondulada. Se puede apoyar en vertical o en horizontal y colgar en la pared con los anclajes de la parte trasera.Para fotos de 10cm x 15cm',
         category: 'deco',
-        stock: 20,
+        stock: 40,
         price: 1200,
         img: [
             '/public/marcoOndas1.jpg',
@@ -280,7 +280,7 @@ const products = [
         name: 'marco fotos irregular',
         description: 'Marco de fotos metálico de forma irregular con paspartú. Se puede apoyar en vertical o en horizontal y colgar en la pared con los anclajes de la parte trasera. Para fotos de 10cm x 15cm',
         category: 'deco',
-        stock: 20,
+        stock: 30,
         price: 1200,
         img: [
             '/public/marcoOval1.jpg',
@@ -293,7 +293,7 @@ const products = [
         name: 'cesta ondas',
         description: 'Cesta cuadrada de fibra, con acabado de ondas. Perfecta para utilizar como almacenaje o como elemento decorativo. Medidas: 24cm x 24cm y 14cm de alto.',
         category: 'deco',
-        stock: 20,
+        stock: 30,
         price: 1200,
         img: [
             '/public/cestaOndas1.jpg',
