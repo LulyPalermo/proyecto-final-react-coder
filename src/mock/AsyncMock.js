@@ -318,13 +318,14 @@ const products = [
 export const getProducts = () => {
     let error = false
     return new Promise((resolve, reject) => {
-        if (error) {
-            //existe el error, entonces rechazamos
-            reject('Hubo un error, intentalo más tarde')
-        } else {
-            resolve(products)
-        }
-        setTimeout(() => { }, 2000)
+        setTimeout(() => {
+            if (error) {
+                //existe el error, entonces rechazamos
+                reject('Hubo un error, intentalo más tarde')
+            } else {
+                resolve(products) // Recién después de 2s se resuelve la promesa
+            }
+        }, 1000);
     })
 }
 
