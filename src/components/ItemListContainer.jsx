@@ -5,8 +5,9 @@ import { useParams } from "react-router-dom";
 import { LoaderComponent } from "./LoaderComponent";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../service/firebase";
+// import { products as productsMock } from "../mock/AsyncMock";
 
-export const ItemListContainer = ({ saludo, mensaje }) => {
+export const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
     const [loader, setLoader] = useState(false);
@@ -25,7 +26,7 @@ export const ItemListContainer = ({ saludo, mensaje }) => {
         // Este metodo nos devuelve una promesa
         getDocs(productsCollection)
             .then((res) => {
-                console.log(res.docs)
+                // console.log(res.docs)
                 const list = res.docs.map((doc) => {
                     return {
                         id: doc.id,
@@ -66,36 +67,56 @@ export const ItemListContainer = ({ saludo, mensaje }) => {
     // console.log(category);
 
     // Función para mostrar título según categoría
-    /*  const renderCategoryTitle = () => {
-         if (!category) return null;
-         // return category
-         return category.charAt(0).toUpperCase() + category.slice(1);  // Capitaliza la primera letra y deja el resto igual
-     }; */
+    const renderCategoryTitle = () => {
+        if (!category) return null;
+        // return category
+        return category.charAt(0).toUpperCase() + category.slice(1);  // Capitaliza la primera letra y deja el resto igual
+    };
+
+
+    /* //Función para subir dinámicamente los productos a firebase
+    const subirData = async () => {
+        console.log("Subiendo data...");
+        const collectionAagregar = collection(db, "products");
+
+        for (const prod of productsMock) {
+            try {
+                await addDoc(collectionAagregar, prod);
+                console.log(`Producto agregado: ${prod.name}`);
+            } catch (error) {
+                console.error("Error subiendo producto:", error);
+            }
+        }
+    }; */
 
     return (
         <>
+
             {loader
                 ? <LoaderComponent />
-                : <div className="main-container">
-                    <section>
-                        <p>{saludo}</p>
-                        <p>{mensaje}</p>
-                        {/* Título de categoría */}
+                :
+                <>
+                    <section className="hero">
+                        <img src="/public/hero1.jpg" alt="" />
+                    </section>
 
+                    <section className="main-container">
+                        {/* Título de categoría */}
                         <div className="category-name">
-                            {/* {category && <h2>{renderCategoryTitle()}</h2>} */}
+                            {category && <h2>{renderCategoryTitle()}</h2>}
 
                             {/* Cantidad de artículos */}
                             {category && (
                                 <p> Mostrando {products.length} artículo{products.length !== 1 ? "s" : ""}</p>
                             )}
                         </div>
-                    </section>
 
-                    <section id="products-section">
-                        <ItemList products={products} />
+
+                        <section id="products-section">
+                            <ItemList products={products} />
+                        </section>
                     </section>
-                </div>
+                </>
             }
         </>
 

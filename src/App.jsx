@@ -4,8 +4,9 @@ import { ItemListContainer } from './components/ItemListContainer';
 import { ItemDetailContainer } from './components/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ErrorComponent } from './components/ErrorComponent';
-import { CartProvider } from './context/CartContext'; //Se llama al proveedor para dar acceso a los componentes
+import { CartProvider } from './context/CartContext';
 import { CartContainer } from './components/CartContainer';
+import { Checkout } from './components/Checkout';
 
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
       <CartProvider>
         <NavBar />
         <Routes>
-          <Route path='/' element={<ItemListContainer saludo='Hola! 👋🏼' mensaje='Bienvenido/a a Patio, e-commerce donde encontrarás los productos más lindos para decorar tu hogar.' />} />
+          <Route path='/' element={<ItemListContainer/>} />
           <Route path='/categories/:category' element={<ItemListContainer />} />
           <Route path='/item/:id' element={<ItemDetailContainer />} />
           <Route path='/cart' element={<CartContainer/>}></Route>
+          <Route path='/checkout' element={<Checkout/>}></Route>
           <Route path='*' element={<ErrorComponent />} />
         </Routes>
       </CartProvider>
