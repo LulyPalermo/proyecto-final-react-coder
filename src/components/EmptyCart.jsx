@@ -11,7 +11,8 @@ export const EmptyCart = () => {
                 </div>
 
                 <div className="empty-cart-acctions">
-                <Link className="primary-button" to='/'>Ir al home</Link>
+                {/* <Link className="secondary-button" to='/'>Ir al home</Link> */}
+                <Link className="text-link" to='/'>Ir al home</Link>
                 </div>
             </div>
         </>

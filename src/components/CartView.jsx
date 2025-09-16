@@ -40,35 +40,38 @@ export const CartView = () => {
             <div className="cart-detail">
                 <div className="cart-items">
                     <div className="cart-item-header">
-                        <p className="cart-item-name">Producto</p>
-                        <p className="cart-item-price">Precio</p>
-                        <p className="cart-item-quantity-header">Cantidad</p>
-                        <p className="cart-item-total-price-header">Precio Total</p>
+                        <div></div> {/*  el espacio de la imagen */}
+                        <div className="cart-item-content">
+                            <p className="cart-item-name-header">Producto</p>
+                            <p className="cart-item-price-header">Precio</p>
+                            <p className="cart-item-quantity-header">Cantidad</p>
+                            <p className="cart-item-total-price-header">Precio Total</p>
+                        </div>
+                        <div></div> {/* el espacio de eliminar */}
                     </div>
 
                     {
                         cart.map((compra) => (
                             <div className="cart-item" key={compra.id}>
                                 <img src={compra.img[0]} alt={compra.name} />
-                                <p className="cart-item-name">{compra.name}</p>
-                                {/* <p>Cant: {compra.quantity}</p> */}
 
-                                <p className="cart-item-price">$ {compra.price}</p>
-
-                                <div className="cart-item-quantity">
-                                    <span className="remove-item" onClick={() => decrementQuantity(compra.id)}>
-                                        <IoMdRemove />
-                                    </span>
-                                    <p className="quantity-item">{compra.quantity}</p>
-                                    <span className="add-item" onClick={() => handleIncrement(compra)}>
-                                        <IoMdAdd />
-                                    </span>
-
+                                <div className="cart-item-content">
+                                    <p className="cart-item-name">{compra.name}</p>
+                                    {/* <p>Cant: {compra.quantity}</p> */}
+                                    <p className="cart-item-price">$ {compra.price}</p>
+                                    <div className="cart-item-quantity">
+                                        <span className="remove-item" onClick={() => decrementQuantity(compra.id)}>
+                                            <IoMdRemove />
+                                        </span>
+                                        <p className="quantity-item">{compra.quantity}</p>
+                                        <span className="add-item" onClick={() => handleIncrement(compra)}>
+                                            <IoMdAdd />
+                                        </span>
+                                    </div>
+                                    <p className="cart-item-total-price">$ {compra.quantity * compra.price}</p>
                                 </div>
 
-                                <p className="cart-item-total-price">$ {compra.quantity * compra.price}</p>
-                                <button className="cart-remove-item" onClick={() => removeItem(compra.id)}> <span><RiDeleteBinLine /></span>
-                                </button>
+                                <button className="cart-remove-item" onClick={() => removeItem(compra.id)}> <span><RiDeleteBinLine /></span></button>
                             </div>
                         ))
                     }
