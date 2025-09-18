@@ -1,6 +1,6 @@
-![Logo](/public/logo.png)
+![Logo](/public/logo-readme.png)
 
-<h1 align="center">🏠 Patio</h1>
+<h1 align="center">Patio</h1>
 Ecommerce de productos de decoración para el hogar, desarrollado como proyecto final del curso de ReactJS de CoderHouse.
 
 ### 🛒 Descripción
@@ -45,7 +45,7 @@ npm run dev
 - [React Icons](https://react-icons.github.io/react-icons/): Íconos SVG.
 - [Firebase](https://firebase.google.com/): Backend y base de datos.
 
-### 📸 Créditos de imágenes
+### 📷 Imágenes
 Las imágenes utilizadas en este proyecto fueron tomadas con fines educativos y de demostración. **No son de autoría propia.**
 
 #### 👩‍💻 Desarrollado por Lucía Palermo
