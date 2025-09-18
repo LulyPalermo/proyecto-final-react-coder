@@ -75,7 +75,7 @@ export const ItemListContainer = () => {
                 :
                 <>
                     <section className="hero">
-                        <img src="/public/hero1.jpg" alt="" />
+                        <img src="/hero1.jpg" alt="" />
                     </section>
 
                     <section className="main-container">
