@@ -6,12 +6,11 @@ export const EmptyCart = () => {
             <div className="empty-cart">
                 <img src="/public/empty-cart-color.svg" alt="" />
                 <div className="empty-cart-info">
-                    <h3 className="empty-cart-title">Tu carrito de compras está vacío</h3>
+                    <h4 className="empty-cart-title">Tu carrito de compras está vacío</h4>
                     <p className="empty-cart-copy">Te invitamos a navegar por nuestras categorías y llenarlo de cosas lindas 🙂</p>
                 </div>
 
                 <div className="empty-cart-acctions">
-                {/* <Link className="secondary-button" to='/'>Ir al home</Link> */}
                 <Link className="text-link" to='/'>Ir al home</Link>
                 </div>
             </div>

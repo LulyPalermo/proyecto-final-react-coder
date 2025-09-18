@@ -6,7 +6,6 @@ function Item({ prod }) {
             {/* Acá se crea la card del producto */}
             <li className="product-description">
                 <div className="product-image">
-                    {/* <img src={prod.img} alt={prod.name} /> */}
                     <img src={prod.img[0]} alt={prod.name} />
                 </div>
                 <div className="product-info">

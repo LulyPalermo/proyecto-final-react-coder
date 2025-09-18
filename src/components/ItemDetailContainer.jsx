@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import { getProductById } from "../mock/AsyncMock";
 import { ItemDetail } from "./ItemDetail";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link, useParams } from "react-router-dom";
@@ -15,7 +14,6 @@ export const ItemDetailContainer = () => {
 
     const { id } = useParams()
 
-    //Con firebase
     useEffect(() => {
         setLoader(true)
 
@@ -35,21 +33,11 @@ export const ItemDetailContainer = () => {
             .finally(() => setLoader(false))
     }, [id])
 
-    //Con promesa
-    /* useEffect(() => {
-        setLoader(true)
-        // Por ahora dejo un id fijo, luego lo tomo de la URL con useParams
-        getProductById(id)
-            .then((res) => setProduct(res)) // Si la promesa se resuelve, se guarda el producto en estado.
-            .catch((error) => console.error(error))
-            .finally(() => setLoader(false))
-    }, [id]); */
-
     if (invalid) {
         return (
             <section id="detail-section">
-                <div>
-                    <h4 className="product-detail-name">Ese producto no existe</h4>
+                <div className="no-results">
+                    <h4 className="product-detail-name">No se encontró ningún producto</h4>
                 </div>
             </section>
         )

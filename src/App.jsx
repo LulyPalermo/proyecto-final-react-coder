@@ -8,6 +8,7 @@ import { CartProvider } from './context/CartContext';
 import { CartContainer } from './components/CartContainer';
 import { Checkout } from './components/Checkout';
 import { Footer } from './components/Footer';
+import { SearchResultsContainer } from './components/SearchResultsContainer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/cart' element={<CartContainer/>}></Route>
           <Route path='/checkout' element={<Checkout/>}></Route>
           <Route path='*' element={<ErrorComponent />} />
+          <Route path="/search/:query" element={<SearchResultsContainer />} />
         </Routes>
         <Footer />
       </CartProvider>

@@ -1,12 +1,52 @@
-# React + Vite
+![Logo](/public/logo.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">🏠 Patio</h1>
+Ecommerce de productos de decoración para el hogar, desarrollado como proyecto final del curso de ReactJS de CoderHouse.
 
-Currently, two official plugins are available:
+### 🛒 Descripción
+**Patio Home&Deco** es una tienda online donde los usuarios pueden explorar, agregar y comprar productos de decoración para el hogar. Incluye funcionalidades completas de carrito, validación de formulario en el checkout y almacenamiento de órdenes en una base de datos online.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Está desarrollada con **React** y utiliza **Firebase** como backend para gestionar las órdenes de compra.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 💻 Versión online
+Podés ver la aplicación desplegada en Vercel en el siguiente enlace:  
+[Patio Home&Deco]()
+
+### ⚙️ Instalación
+Para correr este proyecto de manera local, seguí estos pasos:
+
+1. Cloná el repositorio:
+```bash
+  git clone https://github.com/LulyPalermo/proyecto-final-react-coder.git
+
+```
+
+2. Accedé a la carpeta del proyecto:
+```bash
+cd proyecto-final-react-coder
+```
+
+3. Instalá las dependencias:
+```bash
+npm install
+```
+
+4. Iniciá el servidor de desarrollo:
+```bash
+npm run dev
+
+```
+5. Abrí en tu navegador la URL que te indique la consola
+  
+### Librerias utilizadas 📖
+- [React Router DOM](https://reactrouter.com/): Navegación por rutas.
+- [React Hook Form](https://react-hook-form.com/): Validación de formularios.
+- [React Icons](https://react-icons.github.io/react-icons/): Íconos SVG.
+- [Firebase](https://firebase.google.com/): Backend y base de datos.
+
+### 📸 Créditos de imágenes
+Las imágenes utilizadas en este proyecto fueron tomadas con fines educativos y de demostración. **No son de autoría propia.**
+
+#### 👩‍💻 Desarrollado por Lucía Palermo
+Proyecto académico ReactJS | CoderHouse | 2025

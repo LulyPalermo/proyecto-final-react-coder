@@ -5,19 +5,29 @@ import { useParams } from "react-router-dom";
 import { LoaderComponent } from "./LoaderComponent";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../service/firebase";
-// import { products as productsMock } from "../mock/AsyncMock";
+import { ErrorComponent } from "./ErrorComponent";
+
+const validCategories = ["cocina", "deco", "textiles"];
 
 export const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
     const [loader, setLoader] = useState(false);
-    const { category } = useParams()
+    const [isValidCategory, setIsValidCategory] = useState(true);
+    const { category } = useParams();
 
-    //Con firebase
+
     useEffect(() => {
+        if (category && !validCategories.includes(category)) {
+            setIsValidCategory(false);
+            return;
+        } else {
+            setIsValidCategory(true);
+        }
+
         setLoader(true); // Lo primero que hace el useEffect es prender el loader
 
-        // Primer paso: nos contectamos con nuestra coleccion
+        // Primer paso: nos contectamos con la coleccion
         const productsCollection = category
             ? query(collection(db, "products"), where("category", "==", category)) // Esto lo que dice es: que si existe category, hacé una query a la colección products, donde category sea exactamente igual al category de params
             : collection(db, "products")
@@ -39,33 +49,6 @@ export const ItemListContainer = () => {
             .finally(() => setLoader(false))
     }, [category])
 
-    //Con promesa
-    /*  useEffect(() => {
-         setLoader(true); // Lo primero que hace el useEffect es prender el loader
-         // console.log("Loader ON")
-         getProducts()
-             .then((res) => {
-                 if (category) {
-                     //filtro
-                     setProducts(res.filter((item) => item.category === category));
-                 } else {
-                     //data sin filtrar
-                     setProducts(res)
-                 }
- 
-                 // Mover la página al inicio
-                 window.scrollTo({
-                     top: 0,
-                     behavior: "smooth" // opcional: scroll suave
-                 });
- 
-             })
-             .catch((error) => console.log(error))
-             .finally(() => setLoader(false)) // Se apaga cuando se cargan los productos, cuando se filtran o cuando hay error.
-     }, [category]) */
-
-    // console.log(category);
-
     // Función para mostrar título según categoría
     const renderCategoryTitle = () => {
         if (!category) return null;
@@ -73,21 +56,16 @@ export const ItemListContainer = () => {
         return category.charAt(0).toUpperCase() + category.slice(1);  // Capitaliza la primera letra y deja el resto igual
     };
 
-
-    /* //Función para subir dinámicamente los productos a firebase
-    const subirData = async () => {
-        console.log("Subiendo data...");
-        const collectionAagregar = collection(db, "products");
-
-        for (const prod of productsMock) {
-            try {
-                await addDoc(collectionAagregar, prod);
-                console.log(`Producto agregado: ${prod.name}`);
-            } catch (error) {
-                console.error("Error subiendo producto:", error);
-            }
-        }
-    }; */
+    // Si la categoría no es válida → mostramos la página de error
+    if (!isValidCategory) {
+        return (
+            <section id="detail-section">
+                <div className="no-results">
+                    <h4 className="product-detail-name">No se encontró ninguna categoría</h4>
+                </div>
+            </section>
+        )
+    }
 
     return (
         <>
@@ -107,10 +85,9 @@ export const ItemListContainer = () => {
 
                             {/* Cantidad de artículos */}
                             {category && (
-                                <p> Mostrando {products.length} artículo{products.length !== 1 ? "s" : ""}</p>
+                                <p> Mostrando {products.length} producto{products.length !== 1 ? "s" : ""}</p>
                             )}
                         </div>
-
 
                         <section id="products-section">
                             <ItemList products={products} />

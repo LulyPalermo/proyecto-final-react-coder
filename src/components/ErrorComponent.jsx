@@ -5,10 +5,10 @@ export const ErrorComponent = () => {
         <section className="main-error">
             <img src="/public/empty-state-location.svg" alt="Imagen error en la página" />
             <div className="main-error-text">
-                <h1>Lo sentimos</h1>
+                <h3>Lo sentimos</h3>
                 <p>La ubicación a la que intentas acceder no existe</p>
             </div>
-            <Link to='/' className="primary-button">Volver al home</Link>
+            <Link className="text-link" to='/'>Volver al home</Link>
         </section>
     )
 }

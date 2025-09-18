@@ -13,7 +13,6 @@ export const ItemDetail = ({ product }) => {
     const [showModal, setShowModal] = useState(false);
     const [modalMessage, setModalMessage] = useState("");
 
-
     // Responsable de la lógica de agregar un producto al carrito
     const onAdd = (quantity) => {
         const success = addItem(product, quantity);
@@ -30,9 +29,6 @@ export const ItemDetail = ({ product }) => {
     return (
         <>
             <div className="product-detail">
-                {/* <div className="product-detail-img">
-                <img src={product.img} alt={product.name} />
-            </div> */}
                 <div className="product-detail-img">
                     {product.img.map((img, index) => (
                         <img

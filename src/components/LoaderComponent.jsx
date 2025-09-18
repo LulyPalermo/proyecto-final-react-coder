@@ -4,7 +4,6 @@ export const LoaderComponent = () => {
     return (
         <div className="loader-spinner">
             <AiOutlineLoading3Quarters className="loader-icon" />
-            {/* <p>Cargando producto...</p> */}
         </div>
     )
 }

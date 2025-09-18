@@ -15,12 +15,6 @@ export const Checkout = () => {
     const [purchasedItems, setPurchasedItems] = useState([]);
     const [purchaseTotal, setPurchaseTotal] = useState(0);
 
-
-
-    console.log(errors, 'errores');
-
-
-
     const finalizarCompra = (data) => {
         console.log(data, 'data')
 
@@ -74,10 +68,6 @@ export const Checkout = () => {
                     orderId ? (
                         <>
                             <section className="checkout-content">
-                                {/*  <div className="checkout-order-number">
-                                    <p>Orden #:</p>
-                                    <p className="checkout-order-copy">{orderId}</p>
-                                </div> */}
                                 <div className="checkout-info">
                                     <h3 className="checkout-info-title">Gracias por tu compra 🙌🏼</h3>
                                     <p className="checkout-info-copy">Recibimos correctamente tu pedido. Recibirás un correo cuando esté listo para ser enviado.</p>
