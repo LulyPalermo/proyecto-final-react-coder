@@ -1,6 +1,6 @@
 ![Logo](/public/logo-readme.png)
 
-<h1 align="center">Patio</h1>
+---
 Ecommerce de productos de decoración para el hogar, desarrollado como proyecto final del curso de ReactJS de CoderHouse.
 
 ### 🛒 Descripción
